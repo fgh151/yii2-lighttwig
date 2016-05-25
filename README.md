@@ -109,3 +109,26 @@ it will render:
 ```html
 <p>10</p>
 ```
+
+Twig options
+------------
+
+You may path parameters to twig constructor:
+
+``php
+$params = [
+    'debug' => false,
+    'charset' => 'UTF-8',
+    'base_template_class' => 'Twig_Template',
+    'strict_variables' => false,
+    'autoescape' => 'html',
+    'cache' => false,
+    'auto_reload' => null,
+    'optimizations' => -1,
+];
+
+return $this->renderTwig('/web/test.twig', [], ['Project_Twig_Extension'], $params);
+```
+
+All params are optional. 
+For params detail see [twig documentation](http://twig.sensiolabs.org/documentation)

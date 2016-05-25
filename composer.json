@@ -3,6 +3,7 @@
     "description": "This extension allow render twig pages into php layout",
     "type": "yii2-extension",
     "keywords": ["yii2","extension"],
+    "homepage": "http://openitstudio.ru",
     "license": "MIT",
     "authors": [
         {

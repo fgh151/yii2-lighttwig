@@ -10,11 +10,12 @@ trait TwigTrait
      * @param array $extensions
      * @return string
      */
-    public function renderTwig($template, $options = [], $extensions = [])
+    public function renderTwig($template, $options = [], $extensions = [], $twigParams = [])
     {
         $loader = new \Twig_Loader_Filesystem(\Yii::getAlias('@app'));
         $twig = new \Twig_Environment(
-            $loader
+            $loader,
+            $twigParams
         );
         if(!empty($extensions)) {
             foreach ($extensions as $extension){
