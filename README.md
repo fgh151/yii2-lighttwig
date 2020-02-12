@@ -115,7 +115,7 @@ Twig options
 
 You may path parameters to twig constructor:
 
-``php
+```php
 $params = [
     'debug' => false,
     'charset' => 'UTF-8',
